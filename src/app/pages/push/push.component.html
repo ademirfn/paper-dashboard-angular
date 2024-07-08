@@ -1,0 +1,84 @@
+<div *ngIf="loading; else content" id="externa">
+    <span class="loader"></span>
+</div>
+
+
+
+
+<ng-template #content>
+    <div class="card-body">
+        <div class="card">
+            <div class="exports">
+                <table>
+                    <thead class=" text-primary">
+                        <th>
+                           <a (click)="exportElmToExcel()"> Exportar para Excel </a>
+                        </th>
+                        <th class="text-right">
+                            <a (click)="exportElmToExcel()"><i class="fa-solid fa-file-excel text-primary"></i></a>
+                        </th>
+
+                    </thead>
+                </table>
+               
+            </div>
+            <div class="card-header">
+                <div class="paginated">
+                    <button (click)="prevPage()" [disabled]="currentPage === 0" class="btnPaginate">Anterior</button>
+                    <button (click)="nextPage()" [disabled]="currentPage === totalPages()" class="btnPaginate">Próximo</button>
+                </div>
+            </div>
+            <div>
+                <table class="table" #userTable>
+                    <thead class=" text-primary">
+                        <th>
+                            TÍTULO
+                        </th>
+                        <th>
+                            DATA DO PUSH
+                        </th>
+                        <th>
+                            ENVIADOS ANDROID
+                        </th>
+                        <th class="text-right">
+                            CLICkS ANDROID
+                        </th>
+                        <th>
+                            ENVIADOS IOS
+                        </th>
+                        <th class="text-right">
+                            CLICkS IOS
+                        </th>
+                        <th>
+                            TOTAL ENVIADOS
+                        </th>
+                        <th class="text-right">
+                            TOTAL CLICkS
+                        </th>
+
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let push of pushs">
+                            <td>{{push.conteudo}}</td>
+                            <td class="text-center">{{push.data}}</td>
+
+                            <td class="text-center">{{push.platform_delivery_stats.android.successful}}</td>
+                            <td class="text-center">{{push.platform_delivery_stats.android.converted}}</td>
+
+                            <td class="text-center">{{push.platform_delivery_stats.ios.successful}}</td>
+                            <td class="text-center">{{push.platform_delivery_stats.ios.converted}}</td>
+
+                            <td class="text-center">{{push.enviados}}</td>
+                            <td class="text-right">{{push.total_clicks}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="paginated">
+                <button (click)="prevPage()" [disabled]="currentPage === 0" class="btnPaginate">Anterior</button>
+                <button (click)="nextPage()" [disabled]="currentPage === totalPages()" class="btnPaginate">Próximo</button>
+            </div>
+        </div>
+    </div>
+</ng-template>

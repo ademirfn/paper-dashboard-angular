@@ -1,0 +1,11 @@
+<div style="display: flex;">
+    <div style="display: block; width: 50%; margin: 0 0 0 auto;">
+        <h2>Pelo menos 1 acesso</h2>
+        <canvas id="loginChart"></canvas>
+    </div>
+    <div style="display: block; width: 50%; margin: 0 0 0 auto;">
+        <h2>Ativos no mês</h2>
+        <canvas baseChart [data]="barChartData" [type]="barChartType" [options]="barChartOptions">
+        </canvas>
+    </div>
+</div>

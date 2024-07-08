@@ -1,0 +1,42 @@
+[
+    {
+      "versao": "0.5.7",
+      "usuarios": 1
+    },
+    {
+      "versao": "0.6.4",
+      "usuarios": 2
+    },
+    {
+      "versao": "0.7.3",
+      "usuarios": 4
+    },
+    {
+      "versao": "0.7.6",
+      "usuarios": 5
+    },
+    {
+      "versao": "0.8.0",
+      "usuarios": 7
+    },
+    {
+      "versao": "0.8.7",
+      "usuarios": 20
+    },
+    {
+      "versao": "0.8.8",
+      "usuarios": 289
+    },
+    {
+      "versao": "0.8.9",
+      "usuarios": 1
+    },
+    {
+      "versao": "0.9.0",
+      "usuarios": 5
+    },
+    {
+      "versao": "0.9.1",
+      "usuarios": 234
+    }
+   ]

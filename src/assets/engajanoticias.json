@@ -1,0 +1,107 @@
+[
+  {
+    "mes": "2024-05",
+    "titulo": "likes_noticias",
+    "total_registros": "74"
+  },
+  {
+    "mes": "2024-05",
+    "titulo": "comentarios_noticias",
+    "total_registros": "4"
+  },
+  {
+    "mes": "2024-05",
+    "titulo": "Total Mes",
+    "total_registros": "78"
+  },
+  {
+    "mes": "2024-04",
+    "titulo": "likes_noticias",
+    "total_registros": "82"
+  },
+  {
+    "mes": "2024-04",
+    "titulo": "comentarios_noticias",
+    "total_registros": "4"
+  },
+  {
+    "mes": "2024-04",
+    "titulo": "Total Mes",
+    "total_registros": "86"
+  },
+  {
+    "mes": "2024-03",
+    "titulo": "likes_noticias",
+    "total_registros": "83"
+  },
+  {
+    "mes": "2024-03",
+    "titulo": "comentarios_noticias",
+    "total_registros": "7"
+  },
+  {
+    "mes": "2024-03",
+    "titulo": "Total Mes",
+    "total_registros": "90"
+  },
+  {
+    "mes": "2024-02",
+    "titulo": "likes_noticias",
+    "total_registros": "96"
+  },
+  {
+    "mes": "2024-02",
+    "titulo": "comentarios_noticias",
+    "total_registros": "7"
+  },
+  {
+    "mes": "2024-02",
+    "titulo": "Total Mes",
+    "total_registros": "103"
+  },
+  {
+    "mes": "2024-01",
+    "titulo": "likes_noticias",
+    "total_registros": "144"
+  },
+  {
+    "mes": "2024-01",
+    "titulo": "comentarios_noticias",
+    "total_registros": "3"
+  },
+  {
+    "mes": "2024-01",
+    "titulo": "Total Mes",
+    "total_registros": "147"
+  },
+  {
+    "mes": "2023-12",
+    "titulo": "likes_noticias",
+    "total_registros": "157"
+  },
+  {
+    "mes": "2023-12",
+    "titulo": "comentarios_noticias",
+    "total_registros": "31"
+  },
+  {
+    "mes": "2023-12",
+    "titulo": "Total Mes",
+    "total_registros": "188"
+  },
+  {
+    "mes": "2023-11",
+    "titulo": "likes_noticias",
+    "total_registros": "30"
+  },
+  {
+    "mes": "2023-11",
+    "titulo": "comentarios_noticias",
+    "total_registros": "3"
+  },
+  {
+    "mes": "2023-11",
+    "titulo": "Total Mes",
+    "total_registros": "33"
+  }
+]

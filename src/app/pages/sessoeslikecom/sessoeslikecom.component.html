@@ -1,0 +1,42 @@
+<div class="table-responsive">
+    <h2>Notícias</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th *ngFor="let item of dadosFormatados">{{ item.mes | date: 'MMM/yyyy' }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let titulo of titulos">
+                <td>
+                    {{ titulo }}
+                </td>
+                <td *ngFor="let item of dadosFormatados" class="text-center">
+                    {{ item[titulo] || '-' }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="table-responsive">
+    <h2>Avisos</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th *ngFor="let item of dadosFormatadosAvisos">{{ item.mes | date: 'MMM/yyyy' }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let titulo of titulosAvisos">
+                <td>
+                    {{ titulo }}
+                </td>
+                <td *ngFor="let item of dadosFormatadosAvisos" class="text-center">
+                    {{ item[titulo] || '-' }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,72 @@
+<mat-tab-group>
+    <mat-tab label="Resumo">
+        <div style="display: block;">
+            <canvas baseChart [data]="barChartData" [options]="barChartOptions" [type]="barChartType">
+            </canvas>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th *ngFor="let label of comentarios">{{ label.month | date: 'MMM/yy' }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td *ngFor="let item of comentarios">{{ item.comment_count }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </mat-tab>
+    <mat-tab label="Comentários">
+        <h2>Engajamento das postagens - comentários</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th></th>
+                    <th>Título</th>
+                    <th>Categoria</th>
+                    <th>Comentários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of allPosts">
+                    <td>{{ post.month | date: 'MMM/yy' }}</td>
+                    <td></td>
+                    <td>{{ post.post_title }}</td>
+                    <td>{{ post.post_type }}</td>
+                    <td>{{ post.comment_count }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-tab>
+    <mat-tab label="Likes">
+        <h2>Engajamento das postagens - likes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th></th>
+                    <th>Título</th>
+                    <th>Categoria</th>
+                    <th>Likes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of allLikesPosts">
+                    <td>{{ post.month | date: 'MMM/yy' }}</td>
+                    <td></td>
+                    <td>{{ post.post_title }}</td>
+                    <td>{{ post.post_type }}</td>
+                    <td>{{ post.like_count }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-tab>
+    <mat-tab label="Noticias"></mat-tab>
+    <mat-tab label="Avisos"></mat-tab>
+    <mat-tab label="Podcast´s"></mat-tab>
+    <mat-tab label="Vídeos"></mat-tab>
+</mat-tab-group>

@@ -1,0 +1,29 @@
+<div style="display: flex;">
+        <div style="flex: 1;">
+          <canvas baseChart
+                  [data]="pieChartData"
+                  [options]="pieChartOptions"
+                  [plugins]="pieChartPlugins"
+                  type="pie">
+          </canvas>
+        </div>
+        <div style="flex: 1; padding-left: 20px;">
+          <table *ngIf="pieChartData.labels && pieChartData.datasets[0].data.length">
+            <thead>
+              <tr>
+                <th>Cor</th>
+                <th>Versão</th>
+                <th>Usuários</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of pieChartData.labels; let i = index">
+                <td><div style="width: 20px; height: 20px; background-color: {{ pieChartData.datasets[0].backgroundColor[i] }};"></div></td>
+                <td>{{ item }}</td>
+                <td>{{ pieChartData.datasets[0].data[i] }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      

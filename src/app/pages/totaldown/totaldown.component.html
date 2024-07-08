@@ -1,0 +1,28 @@
+<div style="display: block;">
+    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" [type]="barChartType">
+    </canvas>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th *ngFor="let label of barChartLabels">{{ label }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iOS</td>
+            <td *ngFor="let item of chartData">{{ item.ios }}</td>
+        </tr>
+        <tr>
+            <td>Android</td>
+            <td *ngFor="let item of chartData">{{ item.android }}</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td *ngFor="let item of chartData">{{ item.total }}</td>
+        </tr>
+    </tbody>
+</table>

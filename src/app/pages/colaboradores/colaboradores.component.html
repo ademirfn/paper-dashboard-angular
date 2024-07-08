@@ -1,0 +1,50 @@
+<mat-tab-group>
+    <mat-tab label="Engajamento colaborador likes">
+        <h2>Engajamento colaborador likes</h2>
+        <!-- post-table.component.html -->
+        <table *ngIf="likesOk">
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Colaborador</th>
+                    <th>Unidade</th>
+                    <th>Cargo</th>
+                    <th>Likes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of allLikers">
+                    <td>{{ post.month | date: 'MMM/yy' }}</td>
+                    <td>{{ post.display_name }}</td>
+                    <td>{{ post.empresa }}</td>
+                    <td>{{ post.cargo }}</td>
+                    <td>{{ post.like_count }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-tab>
+    <mat-tab label="Engajamento colaborador comentários">
+        <h2>Engajamento colaborador comentários</h2>
+        <!-- post-table.component.html -->
+        <table *ngIf="commentsOk">
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Colaborador</th>
+                    <th>Unidade</th>
+                    <th>Cargo</th>
+                    <th>Comentários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of allComents">
+                    <td>{{ post.month | date: 'MMM/yy' }}</td>
+                    <td>{{ post.display_name }}</td>
+                    <td>{{ post.empresa }}</td>
+                    <td>{{ post.cargo }}</td>
+                    <td>{{ post.comment_count }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-tab>
+</mat-tab-group>

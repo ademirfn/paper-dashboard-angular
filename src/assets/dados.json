@@ -1,0 +1,15 @@
+[
+    {"ios": 22, "android": 49, "total": 71, "label": "jun/23"},
+    {"ios": 25, "android": 54, "total": 79, "label": "jul/23"},
+    {"ios": 28, "android": 58, "total": 86, "label": "ago/23"},
+    {"ios": 23, "android": 50, "total": 73, "label": "set/23"},
+    {"ios": 27, "android": 52, "total": 79, "label": "out/23"},
+    {"ios": 24, "android": 53, "total": 77, "label": "nov/23"},
+    {"ios": 26, "android": 55, "total": 81, "label": "dez/23"},
+    {"ios": 21, "android": 47, "total": 68, "label": "jan/24"},
+    {"ios": 22, "android": 50, "total": 72, "label": "fev/24"},
+    {"ios": 29, "android": 57, "total": 86, "label": "mar/24"},
+    {"ios": 24, "android": 49, "total": 73, "label": "abr/24"},
+    {"ios": 25, "android": 51, "total": 76, "label": "mai/24"}
+  ]
+  

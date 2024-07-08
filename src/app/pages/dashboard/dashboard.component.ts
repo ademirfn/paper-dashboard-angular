@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Chart from 'chart.js';
+//import Chart from 'chart.js';
 
 
 @Component({
@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit{
   public chartHours;
 
     ngOnInit(){
-      this.chartColor = "#FFFFFF";
+    /*  this.chartColor = "#FFFFFF";
 
       this.canvas = document.getElementById("chartHours");
       this.ctx = this.canvas.getContext("2d");
@@ -204,6 +204,6 @@ export class DashboardComponent implements OnInit{
         hover: false,
         data: speedData,
         options: chartOptions
-      });
+      });*/
     }
 }

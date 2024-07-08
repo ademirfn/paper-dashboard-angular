@@ -1,0 +1,114 @@
+
+<mat-tab-group>
+    <mat-tab label="Resumo">
+        <table>
+            <thead>
+                <tr>
+                    <th><img class="inverted" src="assets/icons/noticia.svg" /></th>
+                    <th><img class="inverted" src="assets/icons/podcast.svg" /></th>
+                    <th><img class="inverted" src="assets/icons/video.svg" /></th>
+                    <th><img class="inverted" src="assets/icons/avisos.svg" /></th>
+                    <th><img class="inverted" src="assets/icons/enquete.svg" /></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Notícias</td>
+                    <td>Podcasts</td>
+                    <td>Vídeos</td>
+                    <td>Avisos</td>
+                    <td>Enquete</td>
+                </tr>
+                <tr>
+                    <td>
+                        61<br>
+                        Postagens, sendo<br>
+                        ALN – 17<br>
+                        MPSA - 18<br>
+                        ALN e MPSA – 26<br>
+                        +interações:<br>
+                        Prêmio Liderança
+                        Inclusiva de Hydro B&A<br>
+                        +acessado:<br>
+                        Novo sistema de folha,
+                        totalmente integrado ao
+                        ONE, elimina duplicidade
+                        de acessos e agiliza
+                        processos para gestores
+                        e empregados
+                    </td>
+                    <td>
+                        5<br>
+                        Postagens<br>
+                        ALN e MPSA – 5<br>
+                        +interações:<br>
+                        Resumo da Semana 28/03<br>
+                        +acessado:<br>
+                        Resumo da Semana 15/03
+                    </td>
+                    <td>
+                        3<br>
+                        Postagens:<br>
+                        ALN – 1<br>
+                        ALN e MPSA – 2<br>
+                        +interações:<br>
+                        Dia Internacional da Mulher:
+                        assista à mensagem de
+                        Nelia Lapa sobre a data<br>
+                        +acessado:<br>
+                        Dia Internacional da Mulher:
+                        assista à mensagem de
+                        Nelia Lapa sobre a data
+                    </td>
+                    <td>
+                        1<br>
+                        Postagens<br>
+                        ALN e MPSA – 1<br>
+                        +acessado:<br>
+                        Informe de Rendimentos
+                        2023 já disponível!
+                    </td>
+                    <td>
+                        1<br>
+                        Postagens:<br>
+                        ALN e MPSA – 1<br>
+                        +acessado:<br>
+                        Adoce sua Páscoa com
+                        produtos Tipitix!
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+    </mat-tab>
+
+    <mat-tab label="Tabela">
+        <div style="display: flex; margin-top: 15px;">
+          <div style="width: 50%; margin-right: 10px;">
+            <canvas #accessChart id="accessChart"></canvas>
+            <button (click)="downloadChart()">Download Gráfico</button>
+          </div>
+          <div style="width: 50%;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tela Menu</th>
+                  <th>Contagem Fevereiro/24</th>
+                  <th>Contagem Março/24</th>
+                  <th>Variação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of tableData">
+                  <td class="text-center">{{ item['Tela Menu'] }}</td>
+                  <td class="text-center">{{ item['Contagem Fevereiro/24'] }}</td>
+                  <td class="text-center">{{ item['Contagem Março/24'] }}</td>
+                  <td class="text-center">{{ item['Variação'] }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,80 @@
+[
+    {
+        "mes": "abr",
+        "Ativos": 599.0,
+        "Inativos": 1923.0,
+        "Total": 2522.0
+    },
+    {
+        "mes": "mai",
+        "Ativos": 612.0,
+        "Inativos": 1910.0,
+        "Total": 2522.0
+    },
+    {
+        "mes": "jun",
+        "Ativos": 624.0,
+        "Inativos": 1898.0,
+        "Total": 2522.0
+    },
+    {
+        "mes": "jul",
+        "Ativos": 634.0,
+        "Inativos": 1899.0,
+        "Total": 2533.0
+    },
+    {
+        "mes": "ago",
+        "Ativos": 647.0,
+        "Inativos": 1876.0,
+        "Total": 2523.0
+    },
+    {
+        "mes": "set",
+        "Ativos": 651.0,
+        "Inativos": 1873.0,
+        "Total": 2524.0
+    },
+    {
+        "mes": "out",
+        "Ativos": 614.0,
+        "Inativos": 1949.0,
+        "Total": 2563.0
+    },
+    {
+        "mes": "nov",
+        "Ativos": 611.0,
+        "Inativos": 1809.0,
+        "Total": 2420.0
+    },
+    {
+        "mes": "dez",
+        "Ativos": 610.0,
+        "Inativos": 1949.0,
+        "Total": 2559.0
+    },
+    {
+        "mes": "jan",
+        "Ativos": 610.0,
+        "Inativos": 1949.0,
+        "Total": 2559.0
+    },
+    {
+        "mes": "fev",
+        "Ativos": 610.0,
+        "Inativos": 1949.0,
+        "Total": 2559.0
+    },
+    {
+        "mes": "mar",
+        "Ativos": 612.0,
+        "Inativos": 1949.0,
+        "Total": 2561.0
+    },
+    {
+        "mes": "abr",
+        "Ativos": 612.0,
+        "Inativos": 1948.0,
+        "Total": 2560.0
+    }
+]

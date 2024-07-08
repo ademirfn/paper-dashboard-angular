@@ -1,0 +1,45 @@
+/* post-table.component.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Exemplo de estilo para o grupo de abas */
+.mat-tab-group {
+  margin: 20px;
+
+  ::ng-deep .mat-tab-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ::ng-deep .mat-tab-label {
+    background-color: #ef8157;
+    color: black;
+    flex: 1;
+    text-align: center;
+  }
+
+  ::ng-deep .mat-tab-label.mat-tab-label-active {
+    background-color: #d76b4d; /* Cor diferente para a aba ativa */
+    color: white;
+  }
+
+  ::ng-deep .mat-ink-bar {
+    background-color: #d76b4d; /* Cor da barra de indicação da aba ativa */
+  }
+}
+
+.mat-tab-body {
+  padding: 20px;
+}
